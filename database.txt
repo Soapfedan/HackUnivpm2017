@@ -1,0 +1,44 @@
+users {
+	id
+	email
+	password
+	name
+	surname
+	address
+	civic_number
+	zip_code
+	country
+	timestamp
+	telephone
+}
+
+products {
+	id
+	category
+	product
+	price
+	barcode
+	images
+}
+
+categories {
+	id
+	category
+}
+
+orders {
+	id
+	id_buyer
+	id_shopper
+	order_state
+	products_list
+	grand_total
+}
+
+reviews {
+	id
+	id_buyer
+	id_shopper
+	rating
+	comment
+}
