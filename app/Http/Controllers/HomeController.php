@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Order;
+use Illuminate\Support\Facades\Auth;
 
 class HomeController extends Controller
 {
@@ -33,7 +34,7 @@ class HomeController extends Controller
         $orders = Order::all();
       
 
-        return view('request',['orders'=>$orders]);
+        return view('request',['orders'=>$orders,'id'=>Auth::user()->id]);
     }
         public function shop()
     {
