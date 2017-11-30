@@ -16,6 +16,7 @@
     <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 37px, 0px); top: 0px; left: 0px; will-change: transform;">
       <a class="dropdown-item" href="#">Catalogo</a>
       <a class="dropdown-item" href="#">Carrello</a>
+      <a class="dropdown-item" href="#">Richieste</a>
     </div>
   </li>
    <li class="navbar-item">
