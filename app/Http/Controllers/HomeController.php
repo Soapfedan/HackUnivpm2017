@@ -25,4 +25,18 @@ class HomeController extends Controller
     {
         return view('dashboard');
     }
+
+        public function request()
+    {
+        return view('request');
+    }
+        public function shop()
+    {
+        return view('shop');
+    }
+        public function catalog()
+    {
+        return view('catalog');
+    }
+
 }
