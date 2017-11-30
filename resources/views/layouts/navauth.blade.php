@@ -14,9 +14,9 @@
         <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dashboard</a>
     <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 37px, 0px); top: 0px; left: 0px; will-change: transform;">
-      <a class="dropdown-item" href="{{route('catalogo')}}">Catalogo</a>
-      <a class="dropdown-item" href="{{route('richieste')}}">Richieste</a>
-      <a class="dropdown-item" href="{{route('carrello')}}">Carrello</a>
+      <a class="dropdown-item" href="{{route('catalog')}}">Catalogo</a>
+      <a class="dropdown-item" href="{{route('request')}}">Richieste</a>
+      <a class="dropdown-item" href="{{route('shoppingcart')}}">Carrello</a>
 
     </div>
   </li>
