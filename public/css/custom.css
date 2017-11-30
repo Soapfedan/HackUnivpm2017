@@ -80,14 +80,14 @@ footer .socials .social-icon {
   width: 100%;
   padding-bottom: 20px;
 }
-.receipts table tbody tr td {
-  width: 50%;
-  font-family: sans-serif;
-}
 .receipts table tbody tr td:first-child {
+  width: 80%;
+  font-family: sans-serif;
   font-weight: bold;
 }
 .receipts table tbody tr td:last-child {
+  width: 20%;
+  font-family: sans-serif;
   text-align: right;
 }
 .receipts span {

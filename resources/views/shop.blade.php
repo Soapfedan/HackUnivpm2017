@@ -1,6 +1,5 @@
 @extends('layouts.master')
 @section('content')
-
 <br><br><br><br>
 <main class="mt-4">
 	<div class="container">
@@ -11,39 +10,18 @@
 			<small>1 Dicembre 2017 | 11:30</small>
 			<hr>
 			<table>
+				@foreach($products as $product)
+				<?php $names = explode(';',$product[0]);?>
 				<tr>
-					<td>Nome prodotto</td>
-					<td>40.00€</td>
+					<td><?php echo $names[0].' - '.$names[1].' (x'.$product[2].')';?></td>
+					<td><?= number_format($product[1]*$product[2],2,'.','')?>€</td>
 				</tr>
-				<tr>
-					<td>Nome prodotto</td>
-					<td>40.00€</td>
-				</tr>
-				<tr>
-					<td>Nome prodotto</td>
-					<td>40.00€</td>
-				</tr>
-				<tr>
-					<td>Nome prodotto</td>
-					<td>40.00€</td>
-				</tr>
-				<tr>
-					<td>Nome prodotto</td>
-					<td>40.00€</td>
-				</tr>
-				<tr>
-					<td>Nome prodotto</td>
-					<td>40.00€</td>
-				</tr>
-				<tr>
-					<td>Nome prodotto</td>
-					<td>40.00€</td>
-				</tr>
+				@endforeach
 			</table>
 			<hr>
 
 			<div class="text-right">
-				Totale: <span>150€</span>
+				Totale: <span><?= number_format($grand_total,2,'.','')?>€</span>
 			</div>
 			<br><br>
 		</div>

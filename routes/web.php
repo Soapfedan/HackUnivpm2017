@@ -17,12 +17,13 @@
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index');
 Route::get('/', 'GuestController@index')->name('home');
-Route::get('/dashboard', 'HomeController@index')->name('dashboard');
 Route::get('/usage', 'GuestController@usage')->name('usage');
 
 
+Route::get('/home', 'HomeController@index');
+Route::get('/dashboard', 'HomeController@index')->name('dashboard');
+Route::post('/dashboard', 'HomeController@addItem')->name('dashboard');
 Route::get('/request', 'HomeController@request')->name('request');
 Route::get('/shoppingcart', 'HomeController@shop')->name('shoppingcart');
 

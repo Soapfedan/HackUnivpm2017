@@ -16,7 +16,7 @@ class Product extends Model
      * @var array
      */
     protected $fillable = [
-        'id', 'id_category', 'product','price','barcode','images','created_at','updated_at'
+        'id', 'id_category', 'product','price','price_kg','barcode','images','created_at','updated_at'
     ];
 
     /**
@@ -27,4 +27,15 @@ class Product extends Model
     protected $hidden = [
         'remember_token'
     ];
+
+    public static function extractProds(){
+
+       $prods = Product::where([
+        ['images','!=','http://www.spesasimply.it/skin/frontend/chronodrive/simply/images/ico-drive-plus.png'],
+        ['images','!=','http://www.spesasimply.it/skin/frontend/chronodrive/simply/images/foto_non_disponibile.jpg'],
+        ['images','!=','http://www.spesasimply.it/skin/frontend/chronodrive/default/images/icons/promo.png'],
+        ['images','!=','http://www.spesasimply.it/skin/frontend/chronodrive/simply/images/label-non-disponibile.png']]
+       )->inRandomOrder()->limit(36)->get();
+        return $prods;
+    }
 }
