@@ -59,6 +59,9 @@ class HomeController extends Controller
     {
 
         $orders = Order::all();
+        foreach ($orders as $key => $value) {
+           
+        }
 
 
         return view('request',['orders'=>$orders,'id'=>Auth::user()->id]);
@@ -89,12 +92,9 @@ class HomeController extends Controller
 
     public function bio(){
         $user = User::find(Auth::user()->id);
-        return view('bio',['user'=>$user])
+        return view('bio',['user'=>$user]);
     }
 
-    public function request(){
-        
-    }
 
 
 }
