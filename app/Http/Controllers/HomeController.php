@@ -47,8 +47,11 @@ class HomeController extends Controller
                $elem = Product::find($key);
                $products[] = [$elem->product,$elem->price,$value];
             }
+            //print_r($pendantOrder[0]->updated_at)
+            //$date = date('d-m-Y',$pendantOrder[0]->updated_at);
+            //$time = date('Gi:s',$pendantOrder[0]->updated_at);
 
-            return view('shop',['status'=>$status,'products'=>$products,'grand_total'=>$pendantOrder[0]->grand_total]);
+            return view('shop',['status'=>$status,'products'=>$products,'date'=>$pendantOrder[0]->updated_at,'grand_total'=>$pendantOrder[0]->grand_total]);
         }
     }
 

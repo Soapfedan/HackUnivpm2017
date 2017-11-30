@@ -7,7 +7,8 @@
 		<h4 class="display-4">Lista della spesa</h4>
 
 		<div class="receipts">
-			<small>1 Dicembre 2017 | 11:30</small>
+			@if($status=='ok')
+			<small>{{ Carbon\Carbon::parse($date)->format('d-m-Y | G:i:s') }}</small>
 			<hr>
 			<table>
 				@foreach($products as $product)
@@ -23,6 +24,9 @@
 			<div class="text-right">
 				Totale: <span><?= number_format($grand_total,2,'.','')?>€</span>
 			</div>
+			@else
+			<p>La tua lista della spesa è vuota!</p>
+			@endif
 			<br><br>
 		</div>
 	</div>
