@@ -6,4 +6,6 @@
 
 - Products
 - Maps
-- Administration
+- Dashboard
+  - Shopper
+  - Customer
