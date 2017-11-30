@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="css/slideshow.css">
   <link rel="stylesheet" href="css/custom.css">
 
+  <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+
 </head>
 <body>
   <!-- MENU -->
