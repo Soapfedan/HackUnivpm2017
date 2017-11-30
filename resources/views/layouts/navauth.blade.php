@@ -6,10 +6,19 @@
 
     <div class="collapse navbar-collapse" id="navbarColor01">
       <ul class="navbar-nav ml-auto">
-        <li class="navbar-item">
-          <a class="nav-link" href="{{'usage'}}">Come Funziona</a>
-        </li>
-        <li class="navbar-item">
+
+        <!--<li class="navbar-item">
+          <a class="nav-link" href="#">Dashboard</a>
+        </li>-->
+        <li class="navbar-item">&nbsp;&nbsp;&nbsp;</li>
+        <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dashboard</a>
+    <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 37px, 0px); top: 0px; left: 0px; will-change: transform;">
+      <a class="dropdown-item" href="#">Catalogo</a>
+      <a class="dropdown-item" href="#">Carrello</a>
+    </div>
+  </li>
+   <li class="navbar-item">
           <a class="nav-link" href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -19,22 +28,5 @@
                                             {{ csrf_field() }}
                                         </form>
         </li>
-        <li class="navbar-item">
-          <a class="nav-link" href="#">Su di noi</a>
-        </li>
-        <!--<li class="navbar-item">
-          <a class="nav-link" href="#">Dashboard</a>
-        </li>-->
-        <li class="navbar-item">&nbsp;&nbsp;&nbsp;</li>
-        <li class="nav-item dropdown">
-    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dashboard</a>
-    <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 37px, 0px); top: 0px; left: 0px; will-change: transform;">
-      <a class="dropdown-item" href="#">Catalogo</a>
-      <a class="dropdown-item" href="#"></a>
-      <a class="dropdown-item" href="#">Something else here</a>
-      <div class="dropdown-divider"></div>
-      <a class="dropdown-item" href="#">Separated link</a>
-    </div>
-  </li>
     </div>
   </nav>
