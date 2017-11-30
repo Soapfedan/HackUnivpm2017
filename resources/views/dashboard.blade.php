@@ -9,7 +9,7 @@
 
     	<div class="col-md-2 py-2">
 			<div class="card">
-			  <img class="card-img-top" src="http://www.spesasimply.it/media/catalog/product/cache/2/small_image/185x/a4e40ebdc3e371adff845072e1c73f37/9/0/908102.jpg" alt="Card image cap">
+			  <img class="card-img-top" src="http://www.spesasimply.it/media/catalog/product/cache/2/small_image/185x/a4e40ebdc3e371adff845072e1c73f37/9/0/908102.jpg">
 			  <div class="card-body">
 			    <h4 class="card-title">Glade Microspry</h4>
 			    <p class="card-text">15€</p>
@@ -19,7 +19,7 @@
     	</div>
     	<div class="col-md-2 py-2">
 			<div class="card">
-			  <img class="card-img-top" src="http://www.spesasimply.it/media/catalog/product/cache/2/small_image/185x/a4e40ebdc3e371adff845072e1c73f37/9/0/908102.jpg" alt="Card image cap">
+			  <img class="card-img-top" src="http://www.spesasimply.it/media/catalog/product/cache/2/small_image/185x/a4e40ebdc3e371adff845072e1c73f37/9/0/908102.jpg">
 			  <div class="card-body">
 			    <h4 class="card-title">Glade Microspry</h4>
 			    <p class="card-text">15€</p>
@@ -29,7 +29,7 @@
     	</div>
     	<div class="col-md-2 py-2">
 			<div class="card">
-			  <img class="card-img-top" src="http://www.spesasimply.it/media/catalog/product/cache/2/small_image/185x/a4e40ebdc3e371adff845072e1c73f37/9/0/908102.jpg" alt="Card image cap">
+			  <img class="card-img-top" src="http://www.spesasimply.it/media/catalog/product/cache/2/small_image/185x/a4e40ebdc3e371adff845072e1c73f37/9/0/908102.jpg">
 			  <div class="card-body">
 			    <h4 class="card-title">Glade Microspry</h4>
 			    <p class="card-text">15€</p>
@@ -39,7 +39,7 @@
     	</div>
     	<div class="col-md-2 py-2">
 			<div class="card">
-			  <img class="card-img-top" src="http://www.spesasimply.it/media/catalog/product/cache/2/small_image/185x/a4e40ebdc3e371adff845072e1c73f37/9/0/908102.jpg" alt="Card image cap">
+			  <img class="card-img-top" src="http://www.spesasimply.it/media/catalog/product/cache/2/small_image/185x/a4e40ebdc3e371adff845072e1c73f37/9/0/908102.jpg">
 			  <div class="card-body">
 			    <h4 class="card-title">Glade Microspry</h4>
 			    <p class="card-text">15€</p>
@@ -49,7 +49,7 @@
     	</div>
     	<div class="col-md-2 py-2">
 			<div class="card">
-			  <img class="card-img-top" src="http://www.spesasimply.it/media/catalog/product/cache/2/small_image/185x/a4e40ebdc3e371adff845072e1c73f37/9/0/908102.jpg" alt="Card image cap">
+			  <img class="card-img-top" src="http://www.spesasimply.it/media/catalog/product/cache/2/small_image/185x/a4e40ebdc3e371adff845072e1c73f37/9/0/908102.jpg">
 			  <div class="card-body">
 			    <h4 class="card-title">Glade Microspry</h4>
 			    <p class="card-text">15€</p>
@@ -59,7 +59,7 @@
     	</div>
     	<div class="col-md-2 py-2">
 			<div class="card">
-			  <img class="card-img-top" src="http://www.spesasimply.it/media/catalog/product/cache/2/small_image/185x/a4e40ebdc3e371adff845072e1c73f37/9/0/908102.jpg" alt="Card image cap">
+			  <img class="card-img-top" src="http://www.spesasimply.it/media/catalog/product/cache/2/small_image/185x/a4e40ebdc3e371adff845072e1c73f37/9/0/908102.jpg">
 			  <div class="card-body">
 			    <h4 class="card-title">Glade Microspry</h4>
 			    <p class="card-text">15€</p>
@@ -69,7 +69,7 @@
     	</div>
     	<div class="col-md-2 py-2">
 			<div class="card">
-			  <img class="card-img-top" src="http://www.spesasimply.it/media/catalog/product/cache/2/small_image/185x/a4e40ebdc3e371adff845072e1c73f37/9/0/908102.jpg" alt="Card image cap">
+			  <img class="card-img-top" src="http://www.spesasimply.it/media/catalog/product/cache/2/small_image/185x/a4e40ebdc3e371adff845072e1c73f37/9/0/908102.jpg">
 			  <div class="card-body">
 			    <h4 class="card-title">Glade Microspry</h4>
 			    <p class="card-text">15€</p>
@@ -79,7 +79,7 @@
     	</div>
     	<div class="col-md-2 py-2">
 			<div class="card">
-			  <img class="card-img-top" src="http://www.spesasimply.it/media/catalog/product/cache/2/small_image/185x/a4e40ebdc3e371adff845072e1c73f37/9/0/908102.jpg" alt="Card image cap">
+			  <img class="card-img-top" src="http://www.spesasimply.it/media/catalog/product/cache/2/small_image/185x/a4e40ebdc3e371adff845072e1c73f37/9/0/908102.jpg">
 			  <div class="card-body">
 			    <h4 class="card-title">Glade Microspry</h4>
 			    <p class="card-text">15€</p>
@@ -89,7 +89,7 @@
     	</div>
     	<div class="col-md-2 py-2">
 			<div class="card">
-			  <img class="card-img-top" src="http://www.spesasimply.it/media/catalog/product/cache/2/small_image/185x/a4e40ebdc3e371adff845072e1c73f37/9/0/908102.jpg" alt="Card image cap">
+			  <img class="card-img-top" src="http://www.spesasimply.it/media/catalog/product/cache/2/small_image/185x/a4e40ebdc3e371adff845072e1c73f37/9/0/908102.jpg">
 			  <div class="card-body">
 			    <h4 class="card-title">Glade Microspry</h4>
 			    <p class="card-text">15€</p>
@@ -99,7 +99,7 @@
     	</div>
     	<div class="col-md-2 py-2">
 			<div class="card">
-			  <img class="card-img-top" src="http://www.spesasimply.it/media/catalog/product/cache/2/small_image/185x/a4e40ebdc3e371adff845072e1c73f37/9/0/908102.jpg" alt="Card image cap">
+			  <img class="card-img-top" src="http://www.spesasimply.it/media/catalog/product/cache/2/small_image/185x/a4e40ebdc3e371adff845072e1c73f37/9/0/908102.jpg">
 			  <div class="card-body">
 			    <h4 class="card-title">Glade Microspry</h4>
 			    <p class="card-text">15€</p>
@@ -109,7 +109,7 @@
     	</div>
     	<div class="col-md-2 py-2">
 			<div class="card">
-			  <img class="card-img-top" src="http://www.spesasimply.it/media/catalog/product/cache/2/small_image/185x/a4e40ebdc3e371adff845072e1c73f37/9/0/908102.jpg" alt="Card image cap">
+			  <img class="card-img-top" src="http://www.spesasimply.it/media/catalog/product/cache/2/small_image/185x/a4e40ebdc3e371adff845072e1c73f37/9/0/908102.jpg">
 			  <div class="card-body">
 			    <h4 class="card-title">Glade Microspry</h4>
 			    <p class="card-text">15€</p>
@@ -119,7 +119,7 @@
     	</div>
     	<div class="col-md-2 py-2">
 			<div class="card">
-			  <img class="card-img-top" src="http://www.spesasimply.it/media/catalog/product/cache/2/small_image/185x/a4e40ebdc3e371adff845072e1c73f37/9/0/908102.jpg" alt="Card image cap">
+			  <img class="card-img-top" src="http://www.spesasimply.it/media/catalog/product/cache/2/small_image/185x/a4e40ebdc3e371adff845072e1c73f37/9/0/908102.jpg">
 			  <div class="card-body">
 			    <h4 class="card-title">Glade Microspry</h4>
 			    <p class="card-text">15€</p>
@@ -129,7 +129,7 @@
     	</div>
     	<div class="col-md-2 py-2">
 			<div class="card">
-			  <img class="card-img-top" src="http://www.spesasimply.it/media/catalog/product/cache/2/small_image/185x/a4e40ebdc3e371adff845072e1c73f37/9/0/908102.jpg" alt="Card image cap">
+			  <img class="card-img-top" src="http://www.spesasimply.it/media/catalog/product/cache/2/small_image/185x/a4e40ebdc3e371adff845072e1c73f37/9/0/908102.jpg">
 			  <div class="card-body">
 			    <h4 class="card-title">Glade Microspry</h4>
 			    <p class="card-text">15€</p>
@@ -139,7 +139,7 @@
     	</div>
     	<div class="col-md-2 py-2">
 			<div class="card">
-			  <img class="card-img-top" src="http://www.spesasimply.it/media/catalog/product/cache/2/small_image/185x/a4e40ebdc3e371adff845072e1c73f37/9/0/908102.jpg" alt="Card image cap">
+			  <img class="card-img-top" src="http://www.spesasimply.it/media/catalog/product/cache/2/small_image/185x/a4e40ebdc3e371adff845072e1c73f37/9/0/908102.jpg">
 			  <div class="card-body">
 			    <h4 class="card-title">Glade Microspry</h4>
 			    <p class="card-text">15€</p>
@@ -149,7 +149,7 @@
     	</div>
     	<div class="col-md-2 py-2">
 			<div class="card">
-			  <img class="card-img-top" src="http://www.spesasimply.it/media/catalog/product/cache/2/small_image/185x/a4e40ebdc3e371adff845072e1c73f37/9/0/908102.jpg" alt="Card image cap">
+			  <img class="card-img-top" src="http://www.spesasimply.it/media/catalog/product/cache/2/small_image/185x/a4e40ebdc3e371adff845072e1c73f37/9/0/908102.jpg">
 			  <div class="card-body">
 			    <h4 class="card-title">Glade Microspry</h4>
 			    <p class="card-text">15€</p>
@@ -159,7 +159,7 @@
     	</div>
     	<div class="col-md-2 py-2">
 			<div class="card">
-			  <img class="card-img-top" src="http://www.spesasimply.it/media/catalog/product/cache/2/small_image/185x/a4e40ebdc3e371adff845072e1c73f37/9/0/908102.jpg" alt="Card image cap">
+			  <img class="card-img-top" src="http://www.spesasimply.it/media/catalog/product/cache/2/small_image/185x/a4e40ebdc3e371adff845072e1c73f37/9/0/908102.jpg">
 			  <div class="card-body">
 			    <h4 class="card-title">Glade Microspry</h4>
 			    <p class="card-text">15€</p>
@@ -169,7 +169,7 @@
     	</div>
     	<div class="col-md-2 py-2">
 			<div class="card">
-			  <img class="card-img-top" src="http://www.spesasimply.it/media/catalog/product/cache/2/small_image/185x/a4e40ebdc3e371adff845072e1c73f37/9/0/908102.jpg" alt="Card image cap">
+			  <img class="card-img-top" src="http://www.spesasimply.it/media/catalog/product/cache/2/small_image/185x/a4e40ebdc3e371adff845072e1c73f37/9/0/908102.jpg">
 			  <div class="card-body">
 			    <h4 class="card-title">Glade Microspry</h4>
 			    <p class="card-text">15€</p>
@@ -179,7 +179,7 @@
     	</div>
     	<div class="col-md-2 py-2">
 			<div class="card">
-			  <img class="card-img-top" src="http://www.spesasimply.it/media/catalog/product/cache/2/small_image/185x/a4e40ebdc3e371adff845072e1c73f37/9/0/908102.jpg" alt="Card image cap">
+			  <img class="card-img-top" src="http://www.spesasimply.it/media/catalog/product/cache/2/small_image/185x/a4e40ebdc3e371adff845072e1c73f37/9/0/908102.jpg">
 			  <div class="card-body">
 			    <h4 class="card-title">Glade Microspry</h4>
 			    <p class="card-text">15€</p>
@@ -189,7 +189,7 @@
     	</div>
     	<div class="col-md-2 py-2">
 			<div class="card">
-			  <img class="card-img-top" src="http://www.spesasimply.it/media/catalog/product/cache/2/small_image/185x/a4e40ebdc3e371adff845072e1c73f37/9/0/908102.jpg" alt="Card image cap">
+			  <img class="card-img-top" src="http://www.spesasimply.it/media/catalog/product/cache/2/small_image/185x/a4e40ebdc3e371adff845072e1c73f37/9/0/908102.jpg">
 			  <div class="card-body">
 			    <h4 class="card-title">Glade Microspry</h4>
 			    <p class="card-text">15€</p>
@@ -199,7 +199,7 @@
     	</div>
     	<div class="col-md-2 py-2">
 			<div class="card">
-			  <img class="card-img-top" src="http://www.spesasimply.it/media/catalog/product/cache/2/small_image/185x/a4e40ebdc3e371adff845072e1c73f37/9/0/908102.jpg" alt="Card image cap">
+			  <img class="card-img-top" src="http://www.spesasimply.it/media/catalog/product/cache/2/small_image/185x/a4e40ebdc3e371adff845072e1c73f37/9/0/908102.jpg">
 			  <div class="card-body">
 			    <h4 class="card-title">Glade Microspry</h4>
 			    <p class="card-text">15€</p>
@@ -209,7 +209,7 @@
     	</div>
     	<div class="col-md-2 py-2">
 			<div class="card">
-			  <img class="card-img-top" src="http://www.spesasimply.it/media/catalog/product/cache/2/small_image/185x/a4e40ebdc3e371adff845072e1c73f37/9/0/908102.jpg" alt="Card image cap">
+			  <img class="card-img-top" src="http://www.spesasimply.it/media/catalog/product/cache/2/small_image/185x/a4e40ebdc3e371adff845072e1c73f37/9/0/908102.jpg">
 			  <div class="card-body">
 			    <h4 class="card-title">Glade Microspry</h4>
 			    <p class="card-text">15€</p>
@@ -219,7 +219,7 @@
     	</div>
     	<div class="col-md-2 py-2">
 			<div class="card">
-			  <img class="card-img-top" src="http://www.spesasimply.it/media/catalog/product/cache/2/small_image/185x/a4e40ebdc3e371adff845072e1c73f37/9/0/908102.jpg" alt="Card image cap">
+			  <img class="card-img-top" src="http://www.spesasimply.it/media/catalog/product/cache/2/small_image/185x/a4e40ebdc3e371adff845072e1c73f37/9/0/908102.jpg">
 			  <div class="card-body">
 			    <h4 class="card-title">Glade Microspry</h4>
 			    <p class="card-text">15€</p>
@@ -229,7 +229,7 @@
     	</div>
     	<div class="col-md-2 py-2">
 			<div class="card">
-			  <img class="card-img-top" src="http://www.spesasimply.it/media/catalog/product/cache/2/small_image/185x/a4e40ebdc3e371adff845072e1c73f37/9/0/908102.jpg" alt="Card image cap">
+			  <img class="card-img-top" src="http://www.spesasimply.it/media/catalog/product/cache/2/small_image/185x/a4e40ebdc3e371adff845072e1c73f37/9/0/908102.jpg">
 			  <div class="card-body">
 			    <h4 class="card-title">Glade Microspry</h4>
 			    <p class="card-text">15€</p>
@@ -239,17 +239,7 @@
     	</div>
     	<div class="col-md-2 py-2">
 			<div class="card">
-			  <img class="card-img-top" src="http://www.spesasimply.it/media/catalog/product/cache/2/small_image/185x/a4e40ebdc3e371adff845072e1c73f37/9/0/908102.jpg" alt="Card image cap">
-			  <div class="card-body">
-			    <h4 class="card-title">Glade Microspry</h4>
-			    <p class="card-text">15€</p>
-			    <a href="#" class="btn btn-success btn-sm">Acquista</a>
-			  </div>
-			</div>
-    	</div>
-    	<div class="col-md-2 py-2">
-			<div class="card">
-			  <img class="card-img-top" src="http://www.spesasimply.it/media/catalog/product/cache/2/small_image/185x/a4e40ebdc3e371adff845072e1c73f37/9/0/908102.jpg" alt="Card image cap">
+			  <img class="card-img-top" src="http://www.spesasimply.it/media/catalog/product/cache/2/small_image/185x/a4e40ebdc3e371adff845072e1c73f37/9/0/908102.jpg">
 			  <div class="card-body">
 			    <h4 class="card-title">Glade Microspry</h4>
 			    <p class="card-text">15€</p>

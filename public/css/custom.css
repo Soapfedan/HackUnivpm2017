@@ -49,3 +49,48 @@ footer .socials .social-icon {
 	font-weight: bold;
 	font-size: 25px;
 }
+.card-body ul {
+	padding-left: 18px;
+}
+
+.receipts {
+	width: 80%;
+	margin: 50px auto;
+	background: #eee;
+	min-width: 300px;
+	padding: 20px;
+}
+.receipts small {
+	padding-top: 20px;
+	font-size: 17px;
+	font-family: monospace;
+	display: block;
+	text-align: center;
+	padding-right: 10px;
+}
+.receipts hr {
+  border:none;
+  border-top: 2px dotted #1d1d1d;
+  color:#eee;
+  background-color:#eee;
+  height:1px;
+  width:100%;
+}
+.receipts table {
+  width: 100%;
+  padding-bottom: 20px;
+}
+.receipts table tbody tr td {
+  width: 50%;
+  font-family: sans-serif;
+}
+.receipts table tbody tr td:first-child {
+  font-weight: bold;
+}
+.receipts table tbody tr td:last-child {
+  text-align: right;
+}
+.receipts span {
+	font-weight: bold;
+	font-size: 20px;
+}
