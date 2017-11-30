@@ -87,9 +87,13 @@ class HomeController extends Controller
         
     }
 
-    public function extractUser(){
+    public function bio(){
         $user = User::find(Auth::user()->id);
         return view('bio',['user'=>$user])
+    }
+
+    public function request(){
+        
     }
 
 
