@@ -25,4 +25,4 @@ Route::get('/usage', 'GuestController@usage')->name('usage');
 
 Route::get('/request', 'HomeController@request')->name('request');
 Route::get('/shoppingcart', 'HomeController@shop')->name('shoppingcart');
-Route::get('/catalog', 'HomeController@catalog')->name('catalog');
+
