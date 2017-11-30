@@ -94,3 +94,19 @@ footer .socials .social-icon {
 	font-weight: bold;
 	font-size: 20px;
 }
+.to-do span {
+	padding: 10px;
+	background: #75CAEB;
+	text-align: center;
+	border-radius: 100%;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	color: #fff;
+	line-height: 1.1;
+	margin-right: 20px;
+}
+.to-do small {
+	display: block;
+	padding-left: 60px;
+}
