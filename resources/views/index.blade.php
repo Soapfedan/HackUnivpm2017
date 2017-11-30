@@ -17,15 +17,23 @@
         <div class="slides slides--titles">
           <div class="slide slide--current">
             <h2 class="slide__title">#easy<br></h2>
-            <small>Vogliamo essere chiari con voi. Nulla di complicato, non troverete mai una clausola scritta piccola. Vi offriamo un servizio semplice e lineare. Nessuna cifra nascosta. Tutto sotto ai vostri occhi.</small>
+            <small>Vi offriamo un servizio semplice e lineare.
+            Nessuna cifra nascosta. Tutto sotto ai vostri occhi.
+            </small>
           </div>
           <div class="slide">
             <h2 class="slide__title">#save</h2>
-            <small>Risparmia. Risparmia tempo, non sottrarlo ai tuoi familiari, al tuo lavoro, alle tue passioni. Risparmia denaro, i nostri prezzi saranno sempre i più competitivi sul mercato. Risparmia inquinamento, ogni persona che condivide il proprio tempo per fare la spesa ad altri, fa risparmiare l’emissione di XX kg di CO2.</small>
+            <small>Risparmia tempo, non sottrarlo ai tuoi familiari, al tuo lavoro, alle tue passioni.
+          Risparmia denaro, i nostri prezzi saranno sempre i più competitivi sul mercato.
+          Risparmia inquinamento, ogni persona che condivide la propria spesa evita l’emissione di CO2.
+          </small>
           </div>
           <div class="slide">
             <h2 class="slide__title">#stopwaste</h2>
-            <small>Hai molto tempo libero? Devi andare a fare spesa per casa tua? Usa una parte del tuo tempo per farlo anche per altri. Guadagna il prezzo del servizio. Fai risparmiare tempo a chi oggi non ne ha, domani potrebbe servire (a) te!</small>
+            <small>Non sprecare tempo, usane una parte per fare spesa anche per altri.
+          Guadagnerai due volte.
+          Fai risparmiare tempo a chi oggi non ne ha, domani potrebbe servire (a) te!
+          </small>
           </div>
         </div>
         <nav class="slidenav">
