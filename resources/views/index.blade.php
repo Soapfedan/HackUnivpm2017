@@ -48,24 +48,25 @@
       
       <!-- COME FUNZIONA -->
       <section class="py-5">
-        <h3 class="text-center display-4">Come funziona?</h3>
-        <p class="lead text-center">
-          Devi fare spesa?
-          Posta la tua lista della spesa, e aspetta solamente che qualcuno la prenda in carico.
-          <br>&#8595;<br>
-          Accetta lo Shopper
-          Vedi chi vuole fare la tua spesa. Guarda le sue recensioni, scegli se affidargli l’incarico o aspettare il prossimo, e se ti va poi valutalo. La Tua spesa per noi è importante, vogliamo che lo sia anche per chi se ne occuperà.
-          <br>&#8595;<br>
-          Aspetta.
-          Non ti resta che aspettare che la spesa arrivi all’orario concordato. Sarei libero di fare ciò che dovevi, senza alcuna preoccupazione.
-        <br><br>
-
-        <a href="#" class="btn btn-primary btn-lg">Scopri di più &#8594;</a></p>
+        <h3 class="text-left display-4">Come funziona?</h3>
+        <p class="lead to-do">
+          <span>1</span><strong>Devi fare spesa?</strong>
+          <small>Posta la tua lista della spesa, e aspetta solamente che qualcuno la prenda in carico.</small>
+          <br>
+          <span>2</span><strong>Accetta lo Shopper</strong>
+          <small>Vedi chi vuole fare la tua spesa. Guarda le sue recensioni, scegli se affidargli l’incarico o aspettare il prossimo, e se ti va poi valutalo. La Tua spesa per noi è importante, vogliamo che lo sia anche per chi se ne occuperà.</small>
+          <br>
+          <span>3</span><strong>Aspetta.</strong>
+          <small>Non ti resta che aspettare che la spesa arrivi all’orario concordato. Sarei libero di fare ciò che dovevi, senza alcuna preoccupazione.</small>
+        <br><br></p>
+        <div class="text-center">
+        <a href="#" class="btn btn-primary btn-lg">Scopri di più &#8594;</a>
+        </div>
       </section>
 
       <section class="py-5">
-        <h3 class="text-center display-4">Perché LetMeBuy.It?</h3>
-        <p class="lead text-center">
+        <h3 class="text-right display-4">Perché LetMeBuy.It?</h3>
+        <p class="lead text-right">
         La vera domanda è: perché no?!
         Ce lo siamo chiesti più volte prima di buttarci in questa avventura.
         Ore interminabili di attesa alle casse, perdite di tempo, una vita di corsa, tutto questo per comprare magari 3 prodotti.
@@ -74,9 +75,10 @@
 
         Let Me Buy It si propone di diventare la prima e più grande community al mondo di condivisione della spesa domestica: la piattaforma mette in contatto persone impossibilitate a sopperire ad un bisogno primario come quello della spesa domestica con chi invece sarebbe andato oggi stesso a far spesa per sé.
 
-        <br><br>
-
-        <a href="#" class="btn btn-primary btn-lg">Scopri di più &#8594;</a></p>
+        <br><br></p>
+        <div class="text-center">
+        <a href="#" class="btn btn-primary btn-lg">Scopri di più &#8594;</a>
+        </div>
       </section>
 
     </div>
@@ -99,7 +101,7 @@
             <div class="col-md-4 my-2">
               <div class="card border-primary values">
                 <div class="card-body">
-                  <img src="img/user.png"><br><br>
+                  <img src="img/receipt.png"><br><br>
                   <h2>103.212</h2>
                   <h4>Spese completate</h4>
                 </div>
@@ -109,7 +111,7 @@
             <div class="col-md-4 my-2">
               <div class="card border-primary values">
                 <div class="card-body">
-                  <img src="img/user.png"><br><br>
+                  <img src="img/co2.png"><br><br>
                   <h2>150Kg</h2>
                   <h4>CO2 risparmiata</h4>
                 </div>
