@@ -41,3 +41,11 @@ footer .socials .social-icon {
 	background: #1d1d1d;
 	color: #fff;
 }
+.catalogs .card-title {
+	font-weight: 200;
+	font-size: 18px;
+}
+.catalogs .card-text {
+	font-weight: bold;
+	font-size: 25px;
+}
