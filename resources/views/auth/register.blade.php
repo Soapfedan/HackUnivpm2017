@@ -1,6 +1,16 @@
-@extends('layouts.app')
+@extends('layouts.master')
 
 @section('content')
+<!-- MENU -->
+  <div class="line-header"></div>
+<div>
+@guest
+ @include('layouts.nav')
+ @else
+ @include('layouts.navauth')
+@endguest
+</div>
+<main>
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
@@ -161,4 +171,5 @@
         </div>
     </div>
 </div>
+</main>
 @endsection

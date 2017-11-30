@@ -1,0 +1,43 @@
+nav {
+	padding: 12px 12px !important;
+}
+.line-header {
+	height: 3px;
+	width: 100%;
+	background: #5EB1D1;
+}
+.navbar-nav {
+    flex-direction: row;
+}
+.nav-link {
+    padding-right: .5rem !important;
+    padding-left: .5rem !important;
+}
+
+@media only screen and (max-width:991px) { 
+	.navbar-nav {
+	    flex-direction: column;
+	}
+	.navbar-item {
+		text-align: center;
+	}
+}
+.numbers {
+	background: url(../img/pattern.jpg) no-repeat center center;
+}
+.numbers .values {
+	background: transparent;
+	color: #75CAEB;
+	text-align: center;
+}
+.numbers .values h2 {
+	color: #FFF;
+	font-weight: 600;
+}
+footer .socials .social-icon {
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 20px;
+	background: #1d1d1d;
+	color: #fff;
+}
