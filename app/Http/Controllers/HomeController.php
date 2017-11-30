@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Order;
 use Illuminate\Support\Facades\Auth;
 use App\Product;
+use App\User;
 class HomeController extends Controller
 {
     /**
@@ -57,9 +58,11 @@ class HomeController extends Controller
 
     public function request()
     {
-
+        $todo = [];
+        $toreceive = [];
+        $all = [];
         $orders = Order::all();
-        foreach ($orders as $key => $value) {
+        foreach ($orders as $order) {
            
         }
 
