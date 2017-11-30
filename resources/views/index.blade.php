@@ -52,10 +52,10 @@
         <p class="lead text-center">
           Devi fare spesa?
           Posta la tua lista della spesa, e aspetta solamente che qualcuno la prenda in carico.
-          <br>&#8595;<br>
+          <br><img src="img/freccia_giu.jpg"><br>
           Accetta lo Shopper
           Vedi chi vuole fare la tua spesa. Guarda le sue recensioni, scegli se affidargli l’incarico o aspettare il prossimo, e se ti va poi valutalo. La Tua spesa per noi è importante, vogliamo che lo sia anche per chi se ne occuperà.
-          <br>&#8595;<br>
+          <br><img src="img/freccia_giu.jpg"><br>
           Aspetta.
           Non ti resta che aspettare che la spesa arrivi all’orario concordato. Sarei libero di fare ciò che dovevi, senza alcuna preoccupazione.
         <br><br>
