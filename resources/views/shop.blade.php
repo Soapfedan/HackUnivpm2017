@@ -82,11 +82,11 @@
 				<div class="text-center">
 					<div class="text-center">
 						<hr>
-				Ecco gli utenti che hanno richiesto di prendere a carico la tua lista della spesa
+				<h4>Ecco gli utenti che hanno richiesto di prendere a carico la tua lista della spesa</h4>
 				<ul class="list-group">
 					@foreach($users as $user)
-				  <li class="list-group-item">
-				  	<?=$user->name.' '.$user->surname?>
+				  <li class="list-group-item jumbotron">
+				  	<p><?=$user->name.' '.$user->surname?></p>
 				    <a href="{{route('bioRequest', ['id' => $user->id])}}" class="btn btn-primary btn-lg">Visita profilo</a>
 				   
 				    <form  method="POST" action="{{ route('acceptorder') }}">
