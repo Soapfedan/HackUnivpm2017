@@ -54,10 +54,21 @@
 					Preso in carico e in consegna da: 
 					<a href="{{route('bioRequest', ['id' => $buyer->id])}}" class="btn btn-primary btn-lg"><?= $buyer->name.' '.$buyer->surname?></a>
 				</div>
+				<br>
 				<div class="text-center">
 					<div class="text-center">
-					Concludi la trattativa e dai una valutazione
-					<a href="#" class="btn btn-primary btn-lg">Valuta</a>
+					Concludi la trattativa e dai una valutazione:<br>
+					<form  method="POST" action="{{ route('valuta') }}">
+                        {{ csrf_field() }}
+						<label class="radio-inline"><input type="radio" name="rating" value="1"> 1 </label>
+						<label class="radio-inline"><input type="radio" name="rating" value="2"> 2 </label>
+						<label class="radio-inline"><input type="radio" name="rating" value="3"> 3 </label>
+						<label class="radio-inline"><input type="radio" name="rating" value="4"> 4 </label>
+						<label class="radio-inline"><input type="radio" name="rating" value="5"> 5 </label>
+						<input type="hidden" value="{{$buyer->id}}" name="id_user">
+						<br>
+						<input type="submit" value="Valuta" class="btn btn-primary btn-lg">
+					</form>
 				</div>
 				
 				</div>

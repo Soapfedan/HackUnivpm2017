@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Product;
 use App\User;
 use App\Userrequest;
+use App\Review;
 class HomeController extends Controller
 {
     /**
@@ -129,7 +130,8 @@ class HomeController extends Controller
 
     public function bio(){
         $user = User::find(Auth::user()->id);
-        return view('bio',['user'=>$user]);
+        $rating = Review::where('id_buyer', Auth::user()->id)->avg('rating');
+        return view('bio',['user'=>$user, 'rating' => $rating]);
     }
 
     public function bioRequest(){
@@ -173,6 +175,15 @@ class HomeController extends Controller
         Userrequest::createRequest($current_order_id,$id_buyer);
         return redirect()->route('request');
 
+        
+    }
+    
+    public function valuta(){
+        $id_user = request()->id_user;
+        $rating = request()->rating;
+
+        Review::reviewUser($id_user,$rating);
+        return redirect()->route('dashboard');
         
     }
 

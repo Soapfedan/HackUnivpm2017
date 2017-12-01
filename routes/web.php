@@ -32,4 +32,5 @@ Route::get('/shoppingcart/{id}', 'HomeController@getRequest')->name('getRequest'
 Route::get('/bio/{id}', 'HomeController@bioRequest')->name('bioRequest');
 Route::get('/deleterequest/{id}', 'HomeController@deleteRequest')->name('deleterequest');
 Route::get('/dorequest/{id}/{current_order_id}','HomeController@doRequest')->name('dorequest');
+Route::post('/valuta','HomeController@valuta')->name('valuta');
 

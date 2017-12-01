@@ -27,4 +27,11 @@ class Review extends Model
     protected $hidden = [
         'remember_token'
     ];
+
+    public static function reviewUser($id_user,$rating){
+
+        Review::insert(
+            ['id_buyer' => $id_user, 'rating' => $rating]
+        );
+    }
 }
