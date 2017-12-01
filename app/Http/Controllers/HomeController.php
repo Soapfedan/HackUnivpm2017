@@ -58,6 +58,7 @@ class HomeController extends Controller
 
     public function request()
     {
+        $adresses = [];
         $todo = [];
         $toreceive = [];
         $all = [];
@@ -86,11 +87,13 @@ class HomeController extends Controller
                  if($order->id_buyer!=$id_user && $order->id_customer!=$id_user && $order->order_state=='requested'){
                     //numero ordine, stato ordine (che non sia pendant), il totale dell'ordine e il nome di tutti i prodotti
                     $all[] = [$order->id,$order->order_state,$order->grand_total,$prods_name];
+                    $customer = User::find($order->id_customer);
+                    $adresses[] = [$customer->address.', '.$customer->civic_number.' - '.$customer->country];
                 }
             }
         }
 
-        return view('request',['todo'=>$todo,'toreceive'=>$toreceive,'all'=>$all]);
+        return view('request',['todo'=>$todo,'toreceive'=>$toreceive,'all'=>$all,'address'=>$adresses]);
     }
     public function addItem()
     {
