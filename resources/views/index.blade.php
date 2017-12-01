@@ -60,7 +60,7 @@
           <small>Non ti resta che aspettare che la spesa arrivi all’orario concordato. Sarei libero di fare ciò che dovevi, senza alcuna preoccupazione.</small>
         <br><br></p>
         <div class="text-center">
-        <a href="#" class="btn btn-primary btn-lg">Scopri di più &#8594;</a>
+        <a href="{{'usage'}}" class="btn btn-primary btn-lg">Scopri di più &#8594;</a>
         </div>
       </section>
 
@@ -77,7 +77,7 @@
 
         <br><br></p>
         <div class="text-center">
-        <a href="#" class="btn btn-primary btn-lg">Scopri di più &#8594;</a>
+        <a href="{{'usage'}}" class="btn btn-primary btn-lg">Scopri di più &#8594;</a>
         </div>
       </section>
 
