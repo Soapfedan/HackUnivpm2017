@@ -47,4 +47,10 @@ class Order extends Model
             Order::where('id',$pendantOrder[0]->id)->update(['products_list' => $pendantOrder[0]->products_list.';'.$prod_id,
                 'grand_total'=>$pendantOrder[0]->grand_total+$price]);
    }
+   public static function deleteOrder($id){
+
+          Order::where('id',$id)->delete();
+           
+   }
+
 }

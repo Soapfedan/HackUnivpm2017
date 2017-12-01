@@ -7,6 +7,7 @@ use App\Order;
 use Illuminate\Support\Facades\Auth;
 use App\Product;
 use App\User;
+use App\Userrequest;
 class HomeController extends Controller
 {
     /**
@@ -88,7 +89,7 @@ class HomeController extends Controller
                     //numero ordine, stato ordine (che non sia pendant), il totale dell'ordine e il nome di tutti i prodotti
                     $all[] = [$order->id,$order->order_state,$order->grand_total,$prods_name];
                     $customer = User::find($order->id_customer);
-                    $adresses[] = [$customer->address.', '.$customer->civic_number.' - '.$customer->country];
+                   //$adresses[] = [$customer->address.', '.$customer->civic_number.' - '.$customer->country];
                 }
             }
         }
@@ -129,11 +130,25 @@ class HomeController extends Controller
         return view('bio',['user'=>$user]);
     }
 
+    public function deleteRequest(){
+        $id = request()->id;
+        Order::deleteOrder($id);
+        return redirect()->route('request');
+
+        
+    }
+
     public function getRequest(){
         $products = [];
         $auth_id = Auth::user()->id;
         $currentOrder = Order::find(request()->id);
         $status = 'ok';
+        $requests = Userrequest::extractRequests($currentOrder->id);
+        $users = [];
+
+        foreach ($requests as $request) {
+           $users[] = User::find($request->id_buyer);
+        }
             $prods = explode(';', $currentOrder->products_list); 
             $occurency=array_count_values($prods);
             foreach ($occurency as $key => $value) {
@@ -142,7 +157,7 @@ class HomeController extends Controller
             }
             $buyer = User::find($currentOrder->id_buyer);
             $customer = User::find($currentOrder->id_customer);
-            return view('shop',['status'=>$status,'products'=>$products,'apt_date'=>$currentOrder->updated_at,'grand_total'=>$currentOrder->grand_total,'order_state'=>$currentOrder->order_state,'auth_id'=>$auth_id,'buyer'=>$buyer,'customer'=>$customer]);
+            return view('shop',['status'=>$status,'current_order_id'=>$currentOrder->id,'products'=>$products,'apt_date'=>$currentOrder->updated_at,'grand_total'=>$currentOrder->grand_total,'order_state'=>$currentOrder->order_state,'auth_id'=>$auth_id,'buyer'=>$buyer,'customer'=>$customer,'users'=>$users]);
         
     }
 

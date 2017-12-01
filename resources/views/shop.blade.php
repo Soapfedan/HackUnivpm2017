@@ -57,14 +57,32 @@
 			</div>
 			<div class="text-center">
 				<div class="text-center">
-				Dai una valutazione
+				Concludi la trattativa e dai una valutazione
 				<a href="#" class="btn btn-primary btn-lg">Valuta</a>
 			</div>
 			
 			</div>
 		@endif
 	@else
-
+		@if($auth_id==$customer->id)
+			<div class="text-center">
+				<a href="{{route('deleterequest',['id'=>$current_order_id])}}" class="btn btn-primary btn-lg">Cancella questo ordine</a>
+			</div>
+			Ecco gli utenti che hanno richiesto di prendere a carico la tua lista della spesa
+			<ul class="list-group">
+				@foreach($users as $user)
+			  <li class="list-group-item">
+			  	<?=$user->name.' '.$user->surname?>
+			    <a href="{{route('bioRequest', ['id' => $user->id])}}" class="btn btn-primary btn-lg">Visita profilo</a>
+			    <a href="#" class="btn btn-success btn-lg">Accetta</a>
+			  </li>
+			 @endforeach
+			</ul>
+		@else
+			<div class="text-center">
+				<a href="{{route('dorequest', ['id' => $auth_id])}}" class="btn btn-primary btn-lg">Fai richiesta per questo ordine</a>
+			</div>
+		@endif
 	@endif
 
 </main>

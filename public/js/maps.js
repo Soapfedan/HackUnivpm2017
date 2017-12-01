@@ -82,7 +82,7 @@ function codeAddress(address) {
             marker = new google.maps.Marker({
                 map: map,
                 position: results[0].geometry.location,
-                content: "<b>Utente:</b> " + user + "<br><b>Indirizzo</b>: " + address + "<br><b>N° Pezzi</b>: " + n_item + "<br><b>Scontrino</b>: " + bill + "<br><b>Ricompensa</b>: " + reward
+                content: "<b>Utente:</b> " + user + "<br><b>Indirizzo</b>: " + address + "<br><b>Scontrino</b>: " + bill + "<br><b>Ricompensa</b>: " + reward
             });
             if (x % 2 == 0) marker.setIcon(marker_color_green);
             if (x % 3 == 0) marker.setIcon(marker_color_yellow);
