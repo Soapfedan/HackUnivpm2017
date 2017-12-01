@@ -34,4 +34,8 @@ class Userrequest extends Model
     public static function createRequest($id_order,$id_buyer){
     	Userrequest::insert(['id_order'=>$id_order,'id_buyer'=>$id_buyer]);
     }
+
+    public static function deleteAllRequests($id_ord){
+        Userrequest::where('id_order',$id_ord)->delete();
+    }
 }

@@ -89,7 +89,7 @@ function codeAddress(values) {
             marker = new google.maps.Marker({
                 map: map,
                 position: results[0].geometry.location,
-                content: "<b>Utente:</b> " + user + "<br><b>Indirizzo</b>: " + address + "<br><b>Scontrino</b>: " + bill + "<br><b>Ricompensa</b>: " + reward
+                content: "<b>Utente:</b> " + user + "<br><b>Indirizzo</b>: " + address + "<br><b>Scontrino</b>: " + bill + " € " + "<br><b>Ricompensa</b>: " + reward+ " € "
             });
             if (x % 2 == 0) marker.setIcon(marker_color_green);
             if (x % 3 == 0) marker.setIcon(marker_color_yellow);
@@ -110,9 +110,9 @@ function codeAddress(values) {
 function calculateReward(bill) {
     var reward = 0;
     if (bill <= threshold1) reward = bill*perc1;
-    else if (bill > threshol1 && bill <= threshold2) reward = bill*perc2;
+    else if (bill > threshold1 && bill <= threshold2) reward = bill*perc2;
     else reward = bill*perc3;
-    return reward;
+    return reward.toFixed(2);
 }
 
 function generateRandomNumber() {

@@ -58,7 +58,7 @@
 				<div class="text-center">
 					<div class="text-center">
 					Concludi la trattativa e dai una valutazione:<br>
-					<form  method="POST" action="{{ route('valuta') }}">
+					<form  method="POST" action="{{ route('valuta',['id_ord'=> $current_order_id]) }}">
                         {{ csrf_field() }}
 						<label class="radio-inline"><input type="radio" name="rating" value="1"> 1 </label>
 						<label class="radio-inline"><input type="radio" name="rating" value="2"> 2 </label>
@@ -84,7 +84,15 @@
 				  <li class="list-group-item">
 				  	<?=$user->name.' '.$user->surname?>
 				    <a href="{{route('bioRequest', ['id' => $user->id])}}" class="btn btn-primary btn-lg">Visita profilo</a>
-				    <a href="#" class="btn btn-success btn-lg">Accetta</a>
+				   
+				    <form  method="POST" action="{{ route('acceptorder') }}">
+                        {{ csrf_field() }}
+						<input type="hidden" value="{{$current_order_id}}" name="id_ord">
+						<br>
+						<input type="hidden" value="{{$user->id}}" name="id_buyer">
+						<br>
+						<input type="submit" value="Accetta" class="btn btn-primary btn-lg">
+					</form>
 				  </li>
 				 @endforeach
 				</ul>

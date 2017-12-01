@@ -130,13 +130,14 @@ class HomeController extends Controller
 
     public function bio(){
         $user = User::find(Auth::user()->id);
-        $rating = Review::where('id_buyer', Auth::user()->id)->avg('rating');
+        $rating = Review::getRating( Auth::user()->id);
         return view('bio',['user'=>$user, 'rating' => $rating]);
     }
 
     public function bioRequest(){
         $user = User::find(request()->id);
-        return view('bio',['user'=>$user]);
+         $rating = Review::getRating( $user->id);
+        return view('bio',['user'=>$user,'rating'=>$rating]);
     }
 
     public function deleteRequest(){
@@ -177,12 +178,22 @@ class HomeController extends Controller
 
         
     }
+
+    public function acceptOrder(){
+        $id_ord = request()->id_ord;
+        $id_buyer = request()->id_buyer;
+        Userrequest::deleteAllRequests($id_ord);
+        Order::acceptOrder($id_ord,$id_buyer);
+        return redirect()->route('request');
+
+    }
     
     public function valuta(){
         $id_user = request()->id_user;
         $rating = request()->rating;
-
+        $id_ord = request()->id_ord;
         Review::reviewUser($id_user,$rating);
+        Order::completeOrder($id_ord);
         return redirect()->route('dashboard');
         
     }

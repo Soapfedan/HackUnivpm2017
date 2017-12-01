@@ -53,4 +53,12 @@ class Order extends Model
            
    }
 
+   public static function completeOrder($id){
+              Order::where('id',$id)->update(['order_state' => 'completed']);
+   }
+
+   public static function acceptOrder($id_ord,$id_buyer){
+         Order::where('id',$id_ord)->update(['order_state'=>'accepted','id_buyer'=>$id_buyer]);
+   }
+
 }

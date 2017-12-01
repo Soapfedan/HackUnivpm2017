@@ -34,4 +34,10 @@ class Review extends Model
             ['id_buyer' => $id_user, 'rating' => $rating]
         );
     }
+
+
+    public static function getRating($id){
+
+        return Review::where('id_buyer', $id)->avg('rating');
+    }
 }

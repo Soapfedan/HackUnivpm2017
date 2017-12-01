@@ -2,7 +2,6 @@
 @section('content')
 <br><br><br><br>
 <br><br>
-<?php print_r($addresses); print_r($names);print_r($bills);?>
 <section class="container">
 
 	<div class="text-right legends">
@@ -96,14 +95,20 @@
 	<h3>Mappa delle richieste</h3>
 </div>
 <div id="map" style="width: 100%;min-height: 300px;"></div>
-		          
+	          
 <script>
-var addresses = [
-    'Via Giacomo Matteotti, 25 - Osimo',
-    'Via Pompeiana, 49 - Osimo',
-    'Via Cagiata, 61 - Osimo'
-];
+	var addresses = new Array();
 
+
+	@for($i = 0;$i<count($names);$i++)
+		<?php echo "addresses[".$i."] = new Array();";
+		 echo "addresses[".$i."][0]='".$names[$i]."';";
+		echo "addresses[".$i."][1]='".$addresses[$i]."';";
+		echo "addresses[".$i."][2]='".$bills[$i]."';";
+		?>
+	@endfor
+
+console.log(addresses);
 
 </script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0hol98vPj-K8WPcyLn086HQjTSfGIQ_4&callback=initMap"></script>

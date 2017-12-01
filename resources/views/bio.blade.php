@@ -17,7 +17,9 @@
             </ul>
         </div>
         <div class="col-md-8 text-right">
-            <h4>Voto degli utenti: <span class="badge badge-secondary">{{$rating->rating}}</span></h4>
+            
+            <h4>Voto degli utenti: <span class="badge badge-secondary"><?=number_format($rating, 2, '.', '');?></span></h4>
+            
         </div>
     </div>
 </div>
