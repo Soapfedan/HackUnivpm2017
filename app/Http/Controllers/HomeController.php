@@ -61,13 +61,36 @@ class HomeController extends Controller
         $todo = [];
         $toreceive = [];
         $all = [];
+        $id_user = Auth::user()->id;
         $orders = Order::all();
         foreach ($orders as $order) {
-           
+           $prods_id = explode(';', $order->products_list);
+           $prods_name = [];
+           $i = 0;
+           foreach ($prods_id as $prod_id) {
+              $i++;
+              if($i<3){
+                $prod = Product::find($prod_id);
+                $prods_name[] = str_replace(';', '-',$prod->product);
+              }  
+           }
+          if($order->order_state!='pendant'){
+                 if($order->id_buyer==$id_user){
+                    //numero ordine, stato ordine (che non sia pendant), il totale dell'ordine e il nome di tutti i prodotti
+                    $todo[] = [$order->id,$order->order_state,$order->grand_total,$prods_name];
+                }
+                 if($order->id_customer==$id_user){
+                    //numero ordine, stato ordine (che non sia pendant), il totale dell'ordine e il nome di tutti i prodotti
+                    $toreceive[] = [$order->id,$order->order_state,$order->grand_total,$prods_name];
+                }
+                 if($order->id_buyer!=$id_user && $order->id_customer!=$id_user){
+                    //numero ordine, stato ordine (che non sia pendant), il totale dell'ordine e il nome di tutti i prodotti
+                    $all[] = [$order->id,$order->order_state,$order->grand_total,$prods_name];
+                }
+            }
         }
 
-
-        return view('request',['orders'=>$orders,'id'=>Auth::user()->id]);
+        return view('request',['todo'=>$todo,'toreceive'=>$toreceive,'all'=>$all]);
     }
     public function addItem()
     {

@@ -4,54 +4,18 @@
 <br><br><br><br>
 
 <section>
-	<?= 'la spesa che devo fare'?>
- @foreach ($orders as $order)
-		        
-		           @if($id==$order->id_buyer )
-		             <li> <?php
-		           	
-		          //  echo $order->id; 
-		          echo $order->id_buyer ;
-		            echo $order->id_customer; 
-		           echo $order->order_state ;
-		            echo $order->products_list; 
-		            echo $order->grand_total;
-		            ?></li>
-@endif @endforeach
+	la spesa che devo andare a comprare io 
+	<?php print_r($todo) ?>
 </section>
 <hr>
 <section>
-	<?= 'la spesa che devo ricevere'?>
- @foreach ($orders as $order)
-		        
-		           @if($id==$order->id_customer )
-		           <li> <?php
-		
-		           // echo $order->id; 
-		          echo $order->id_buyer ;
-		            echo $order->id_customer; 
-		           echo $order->order_state ;
-		            echo $order->products_list; 
-		            echo $order->grand_total;
-		            ?></li>
-@endif @endforeach
+	tutte le richieste che ho fatto per ricevere la spesa
+	<?php print_r($toreceive) ?>
 </section>
 <hr>
 <section>
-	<?= 'tutte le richieste'?>
-@foreach ($orders as $order)
-		        
-		           @if($id!=$order->id_customer && $id!=$order->id_buyer )
-		            	  <li> <?php
-		           	
-		           // echo $order->id; 
-		          echo $order->id_buyer ;
-		            echo $order->id_customer; 
-		           echo $order->order_state ;
-		            echo $order->products_list; 
-		            echo $order->grand_total;
-		            ?></li>
-@endif @endforeach
+	tutte le altre richieste
+	<?php print_r($all) ?>
 </section>
 		      
 		          
