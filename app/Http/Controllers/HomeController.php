@@ -121,6 +121,21 @@ class HomeController extends Controller
         return view('bio',['user'=>$user]);
     }
 
+    public function getRequest(){
+        $products = [];
+        $currentOrder = Order::find(request()->id);
+        $status = 'ok';
+            $prods = explode(';', $currentOrder->products_list); 
+            $occurency=array_count_values($prods);
+            foreach ($occurency as $key => $value) {
+               $elem = Product::find($key);
+               $products[] = [$elem->product,$elem->price,$value];
+            }
+            
+
+            return view('shop',['status'=>$status,'products'=>$products,'date'=>$currentOrder->updated_at,'grand_total'=>$currentOrder->grand_total]);
+        
+    }
 
 
 }
