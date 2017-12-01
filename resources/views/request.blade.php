@@ -20,7 +20,7 @@
 				      	<li>...</li>
 				      </ul>
 				      <footer class="text-left"><h4><span class="badge badge-success">{{$to[2]}}€</span></h4></footer>
-				      <footer class="text-right"><a href="#" class="btn btn-primary btn-sm">Vedi tutto</a></footer>
+				      <footer class="text-right"><a href="{{route('getRequest', ['id' => $to[0]])}}" class="btn btn-primary btn-sm">Vedi tutto</a></footer>
 				    </blockquote>
 				  </div>
 				</div>
@@ -47,7 +47,7 @@
 				      	<li>...</li>
 				      </ul>
 				      <footer class="text-left"><h4><span class="badge badge-success">{{$torec[2]}}€</span></h4></footer>
-				      <footer class="text-right"><a href="#" class="btn btn-primary btn-sm">Vedi tutto</a></footer>
+				      <footer class="text-right"><a href="{{route('getRequest', ['id' => $torec[0]])}}" class="btn btn-primary btn-sm">Vedi tutto</a></footer>
 				    </blockquote>
 				  </div>
 				</div>
@@ -74,7 +74,7 @@
 				      	<li>...</li>
 				      </ul>
 				      <footer class="text-left"><h4><span class="badge badge-success">{{$alls[2]}}€</span></h4></footer>
-				      <footer class="text-right"><a href="#" class="btn btn-primary btn-sm">Vedi tutto</a></footer>
+				      <footer class="text-right"><a href="{{route('getRequest', ['id' => $alls[0]])}}" class="btn btn-primary btn-sm">Vedi tutto</a></footer>
 				    </blockquote>
 				  </div>
 				</div>
