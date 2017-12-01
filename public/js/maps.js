@@ -5,6 +5,12 @@ var marker_color_yellow = "img/yellow.png";
 
 //elementi del content, valorizzate con esempi
 
+var threshold1 = 10;
+var threshold2 = 50;
+
+var perc1 = 0.05;
+var perc2 = 0.08;
+var perc3 = 0.1;
 
 var infowindow;
 var x = 0
@@ -74,7 +80,7 @@ function codeAddress(values) {
     var user=values[0];
     var address=values[1];
     var bill=values[2];
-    var reward=values[3];
+    var reward=calculateReward(bill);
     
     geocoder.geocode({
         'address': address
@@ -99,6 +105,14 @@ function codeAddress(values) {
     });
 
 
+}
+
+function calculateReward(bill) {
+    var reward = 0;
+    if (bill <= threshold1) reward = bill*perc1;
+    else if (bill > threshol1 && bill <= threshold2) reward = bill*perc2;
+    else reward = bill*perc3;
+    return reward;
 }
 
 function generateRandomNumber() {

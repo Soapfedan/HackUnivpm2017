@@ -2,7 +2,7 @@
 @section('content')
 <br><br><br><br>
 <br><br>
-
+<?php print_r($addresses); print_r($names);print_r($bills);?>
 <section class="container">
 
 	<div class="text-right legends">

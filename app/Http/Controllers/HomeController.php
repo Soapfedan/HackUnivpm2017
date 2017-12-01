@@ -60,6 +60,8 @@ class HomeController extends Controller
     public function request()
     {
         $adresses = [];
+        $names = [];
+        $bills = [];
         $todo = [];
         $toreceive = [];
         $all = [];
@@ -90,14 +92,16 @@ class HomeController extends Controller
                     $all[] = [$order->id,$order->order_state,$order->grand_total,$prods_name];
                     $customer = User::find($order->id_customer);
                     //Nome e Cognome
-
+                    $names[] = $customer->name.' '.$customer->surname;
                     //indirizzo
-                    //$adresses[] = [$customer->address.', '.$customer->civic_number.' - '.$customer->country];
+                    $adresses[] = $customer->address.', '.$customer->civic_number.' - '.$customer->country;
+                    //Totali
+                    $bills[] = $order->grand_total;
                 }
             }
         }
 
-        return view('request',['todo'=>$todo,'toreceive'=>$toreceive,'all'=>$all,'address'=>$adresses]);
+        return view('request',['todo'=>$todo,'toreceive'=>$toreceive,'all'=>$all,'addresses'=>$adresses,'names'=>$names,'bills'=>$bills]);
     }
     public function addItem()
     {
