@@ -80,7 +80,7 @@
 			</ul>
 		@else
 			<div class="text-center">
-				<a href="{{route('dorequest', ['id' => $auth_id])}}" class="btn btn-primary btn-lg">Fai richiesta per questo ordine</a>
+				<a href="{{route('dorequest', ['id' => $auth_id,'current_order_id'=>$current_order_id])}}" class="btn btn-primary btn-lg">Fai richiesta per questo ordine</a>
 			</div>
 		@endif
 	@endif

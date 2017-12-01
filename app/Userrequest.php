@@ -30,4 +30,8 @@ class Userrequest extends Model
     public static function extractRequests($id){
     	return Userrequest::where('id_order',$id )->get();
     }
+
+    public static function createRequest($id_order,$id_buyer){
+    	Userrequest::insert(['id_order'=>$id_order,'id_buyer'=>$id_buyer]);
+    }
 }

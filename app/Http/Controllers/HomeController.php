@@ -160,6 +160,14 @@ class HomeController extends Controller
             return view('shop',['status'=>$status,'current_order_id'=>$currentOrder->id,'products'=>$products,'apt_date'=>$currentOrder->updated_at,'grand_total'=>$currentOrder->grand_total,'order_state'=>$currentOrder->order_state,'auth_id'=>$auth_id,'buyer'=>$buyer,'customer'=>$customer,'users'=>$users]);
         
     }
+        public function doRequest(){
+        $id_buyer = request()->id;
+        $current_order_id = request()->current_order_id;
+        Userrequest::createRequest($current_order_id,$id_buyer);
+        return redirect()->route('request');
+
+        
+    }
 
 
 }

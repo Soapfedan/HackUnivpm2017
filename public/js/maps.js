@@ -4,11 +4,7 @@ var marker_color_green = "img/green.png";
 var marker_color_yellow = "img/yellow.png";
 
 //elementi del content, valorizzate con esempi
-var user = "Pippo";
-var address = "Via Brecce Bianche, 46";
-var bill = "50 €";
-var reward = "5 €";
-var n_item = "13";
+
 
 var infowindow;
 var x = 0
@@ -71,10 +67,15 @@ function callback_click_marker(marker) {
     currentMarker = this;
 }
 
-function codeAddress(address) {
+function codeAddress(values) {
     geocoder = new google.maps.Geocoder();
     var marker;
-    var address;
+
+    var user=values[0];
+    var address=values[1];
+    var bill=values[2];
+    var reward=values[3];
+    
     geocoder.geocode({
         'address': address
     }, function(results, status) {
