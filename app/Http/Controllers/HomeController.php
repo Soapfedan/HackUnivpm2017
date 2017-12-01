@@ -34,6 +34,14 @@ class HomeController extends Controller
         return view('dashboard',['prods'=>$prods]);
     }
 
+      public function search()
+    {
+        $text = request()->search;
+        $prods = Product::search($text);
+       
+        return view('dashboard',['prods'=>$prods]);
+    }
+
 
     public function shop()
     {
@@ -54,7 +62,7 @@ class HomeController extends Controller
             //$date = date('d-m-Y',$pendantOrder[0]->updated_at);
             //$time = date('Gi:s',$pendantOrder[0]->updated_at);
 
-            return view('shop',['status'=>$status,'products'=>$products,'apt_date'=>$pendantOrder[0]->updated_at,'grand_total'=>$pendantOrder[0]->grand_total,'get_status'=>false]);
+            return view('shop',['status'=>$status,'products'=>$products,'apt_date'=>$pendantOrder[0]->updated_at,'grand_total'=>$pendantOrder[0]->grand_total,'get_status'=>false,'current_order_id'=>$pendantOrder[0]->id]);
         }
     }
 
@@ -194,8 +202,14 @@ class HomeController extends Controller
         $id_ord = request()->id_ord;
         Review::reviewUser($id_user,$rating);
         Order::completeOrder($id_ord);
-        return redirect()->route('dashboard');
+        return redirect()->route('request');
         
+    }
+
+    public function clean(){
+        $id=request()->id;
+        Order::clean($id);
+        return redirect()->route('shoppingcart');
     }
 
 

@@ -22,7 +22,8 @@
 			<hr>
 
 			<div class="text-right">
-				Totale: <span><?= number_format($grand_total,2,'.','')?>€</span>
+				Totale: <span><?= number_format($grand_total,2,'.','') + 3.99?>€</span><br>
+				<small style="text-align: right; font-size: 13px;">[di cui 3.99€ di commissione]</small><br>
 			</div>
 			@else
 			<p>La tua lista della spesa è vuota!</p>
@@ -102,6 +103,13 @@
 				</div>
 			@endif
 		@endif
+	
+			
+	@else
+		<div class="text-center">
+					<a href="{{route('clean', ['id' => $current_order_id])}}" class="btn btn-primary btn-lg">Svuota il carrello</a>
+					<a href="#" class="btn btn-primary btn-lg">Conferma carrello</a>
+				</div>
 	@endif
 </main>
 @endsection
