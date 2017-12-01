@@ -110,3 +110,13 @@ footer .socials .social-icon {
 	display: block;
 	padding-left: 60px;
 }
+
+.border-completed {
+	border-color: #28B62C !important;
+}
+.border-requested {
+	border-color: #FF851B !important;
+}
+.border-accepted {
+	border-color: #222222 !important;
+}
