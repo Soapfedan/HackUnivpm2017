@@ -34,3 +34,5 @@ Route::get('/deleterequest/{id}', 'HomeController@deleteRequest')->name('deleter
 Route::get('/dorequest/{id}/{current_order_id}','HomeController@doRequest')->name('dorequest');
 Route::post('/valuta/{id_ord}','HomeController@valuta')->name('valuta');
 Route::post('/acceptorder','HomeController@acceptOrder')->name('acceptorder');
+Route::post('/search','HomeController@search')->name('search');
+Route::get('/clean/{id}','HomeController@clean')->name('clean');

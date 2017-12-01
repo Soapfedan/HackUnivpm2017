@@ -61,4 +61,8 @@ class Order extends Model
          Order::where('id',$id_ord)->update(['order_state'=>'accepted','id_buyer'=>$id_buyer]);
    }
 
+    public static function clean($id_ord){
+         Order::where('id',$id_ord)->delete();
+   }
+
 }

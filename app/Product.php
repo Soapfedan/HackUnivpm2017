@@ -38,4 +38,24 @@ class Product extends Model
        )->inRandomOrder()->limit(36)->get();
         return $prods;
     }
+
+
+    public static function search($text){
+       $key_words = explode(' ', $text);
+       if(!count($key_words)<=0){
+        $arrayName=[];
+        for ($i=0; $i < count($key_words) ; $i++) { 
+            $arrayName[]=['product','like','%'.$key_words[$i].'%'];
+        }
+            $arrayName[]=['images','!=','http://www.spesasimply.it/skin/frontend/chronodrive/simply/images/ico-drive-plus.png'];
+        $arrayName[]=['images','!=','http://www.spesasimply.it/skin/frontend/chronodrive/simply/images/foto_non_disponibile.jpg'];
+        $arrayName[]=['images','!=','http://www.spesasimply.it/skin/frontend/chronodrive/default/images/icons/promo.png'];
+        $arrayName[]=['images','!=','http://www.spesasimply.it/skin/frontend/chronodrive/simply/images/label-non-disponibile.png'];
+            $prods = Product::where($arrayName)->limit(36)->get();
+       }else{
+        $prods=[];
+       }
+       
+        return $prods;
+    }
 }
