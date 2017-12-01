@@ -90,7 +90,21 @@
 	</div>
 
 </section>
-		          
 
+<br><br>
+<div class="container">
+	<h3>Mappa delle richieste</h3>
+</div>
+<div id="map" style="width: 100%;min-height: 300px;"></div>
+		          
+<script>
+var addresses = [
+    'Via Giacomo Matteotti, 25 - Osimo',
+    'Via Pompeiana, 49 - Osimo',
+    'Via Cagiata, 61 - Osimo'
+];
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0hol98vPj-K8WPcyLn086HQjTSfGIQ_4&callback=initMap"></script>
+<script src="{{asset('js/maps.js')}}"></script>
 		    
 @endsection
