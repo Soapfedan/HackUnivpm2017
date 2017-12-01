@@ -16,12 +16,11 @@
 						<h4 class="card-title"><?= $names[0]?></h4>
 						<span><?= $names[1]?></span>
 						<p class="card-text"><?= number_format($prod->price, 2, '.', '')?>€</p>
-						<a href="#" class="btn btn-success btn-sm"  onclick="event.preventDefault();
-						document.getElementById('add-item').submit();">Acquista</a>
 
-						<form id="add-item" action="{{ route('dashboard') }}" method="POST" style="display: none;">
+						<form id="add-item" action="{{ route('dashboard') }}" method="POST">
 							{{ csrf_field() }}
 							<input type="hidden" name="prod_id" value="<?= $prod->id ?>">
+							<input type="submit" value="Acquista" class="btn btn-success btn-sm">
 						</form>
 					</div>
 				</div>
