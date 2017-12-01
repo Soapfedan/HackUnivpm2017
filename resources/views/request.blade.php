@@ -5,6 +5,13 @@
 
 <section class="container">
 
+	<div class="text-right legends">
+		Legenda:
+		<span class="border-completed">Spesa effettuata e consegnata</span>
+		<span class="border-requested">Richiesta in corso</span>
+		<span class="border-accepted">Richiesta presa in carico</span>
+	</div>
+
 	<h3>Richieste prese in carico da te</h3>
 	<div class="row">
 	@foreach($todo as $to)

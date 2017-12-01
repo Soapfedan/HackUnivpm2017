@@ -120,3 +120,11 @@ footer .socials .social-icon {
 .border-accepted {
 	border-color: #222222 !important;
 }
+.legends span {
+	display: inline-block;
+	border: 1px solid;
+	border-radius: 5px;
+	padding: 3px;
+	margin: 2px 2px;
+	font-size: 13px;
+}

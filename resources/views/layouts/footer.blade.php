@@ -13,7 +13,7 @@
         <div class="col-md-2"></div>
 
         <div class="col-md-5 text-right socials">
-          <p><i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;&nbsp;letmebuy@customerservice.com</p>
+          <p><i class="fa fa-envelope-o" aria-hidden="true"></i>&nbsp;&nbsp;info@letmebuy.it</p>
           <i class="fa fa-facebook-square social-icon" aria-hidden="true"></i>
           <i class="fa fa-twitter-square social-icon" aria-hidden="true"></i>
           <i class="fa fa-instagram social-icon" aria-hidden="true"></i>
