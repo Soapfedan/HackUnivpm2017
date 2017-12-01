@@ -53,7 +53,7 @@ class HomeController extends Controller
             //$date = date('d-m-Y',$pendantOrder[0]->updated_at);
             //$time = date('Gi:s',$pendantOrder[0]->updated_at);
 
-            return view('shop',['status'=>$status,'products'=>$products,'date'=>$pendantOrder[0]->updated_at,'grand_total'=>$pendantOrder[0]->grand_total]);
+            return view('shop',['status'=>$status,'products'=>$products,'apt_date'=>$pendantOrder[0]->updated_at,'grand_total'=>$pendantOrder[0]->grand_total,'get_status'=>false]);
         }
     }
 
@@ -157,7 +157,7 @@ class HomeController extends Controller
             }
             $buyer = User::find($currentOrder->id_buyer);
             $customer = User::find($currentOrder->id_customer);
-            return view('shop',['status'=>$status,'current_order_id'=>$currentOrder->id,'products'=>$products,'apt_date'=>$currentOrder->updated_at,'grand_total'=>$currentOrder->grand_total,'order_state'=>$currentOrder->order_state,'auth_id'=>$auth_id,'buyer'=>$buyer,'customer'=>$customer,'users'=>$users]);
+            return view('shop',['status'=>$status,'current_order_id'=>$currentOrder->id,'products'=>$products,'apt_date'=>$currentOrder->updated_at,'grand_total'=>$currentOrder->grand_total,'order_state'=>$currentOrder->order_state,'auth_id'=>$auth_id,'buyer'=>$buyer,'customer'=>$customer,'users'=>$users,'get_status'=>true]);
         
     }
         public function doRequest(){

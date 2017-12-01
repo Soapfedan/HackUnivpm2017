@@ -103,6 +103,8 @@ var addresses = [
     'Via Pompeiana, 49 - Osimo',
     'Via Cagiata, 61 - Osimo'
 ];
+
+
 </script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0hol98vPj-K8WPcyLn086HQjTSfGIQ_4&callback=initMap"></script>
 <script src="{{asset('js/maps.js')}}"></script>
