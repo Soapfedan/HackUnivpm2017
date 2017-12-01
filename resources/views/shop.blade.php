@@ -36,7 +36,7 @@
 			@if($auth_id==$buyer->id)
 				<div class="text-center">
 					Consegnato a: 
-					<a href="{{route('bioRequest', ['id' => $buyer->id])}}" class="btn btn-primary btn-lg"><?= $buyer->name.' '.$buyer->surname?></a>
+					<a href="{{route('bioRequest', ['id' => $buyer->id])}}" class="btn btn-primary btn-lg"><?= $customer->name.' '.$customer->surname?></a>
 				</div>
 			@else
 				<div class="text-center">
@@ -48,7 +48,7 @@
 			@if($auth_id==$buyer->id)
 				<div class="text-center">
 					Da consegnare entro le {{Carbon\Carbon::parse($apt_date)->format('d-m-Y | G:i:s')}} a : 
-					<a href="{{route('bioRequest', ['id' => $customer->id])}}" class="btn btn-primary btn-lg"><?= $buyer->name.' '.$buyer->surname?></a>
+					<a href="{{route('bioRequest', ['id' => $customer->id])}}" class="btn btn-primary btn-lg"><?= $customer->name.' '.$customer->surname?></a>
 				</div>
 			@else
 				<div class="text-center">
@@ -79,6 +79,9 @@
 				<div class="text-center">
 					<a href="{{route('deleterequest',['id'=>$current_order_id])}}" class="btn btn-primary btn-lg">Cancella questo ordine</a>
 				</div>
+				<div class="text-center">
+					<div class="text-center">
+						<hr>
 				Ecco gli utenti che hanno richiesto di prendere a carico la tua lista della spesa
 				<ul class="list-group">
 					@foreach($users as $user)
@@ -97,6 +100,8 @@
 				  </li>
 				 @endforeach
 				</ul>
+				</div>
+			</div>
 			@else
 				<div class="text-center">
 					<a href="{{route('dorequest', ['id' => $auth_id,'current_order_id'=>$current_order_id])}}" class="btn btn-primary btn-lg">Fai richiesta per questo ordine</a>
@@ -108,7 +113,7 @@
 	@else
 		<div class="text-center">
 					<a href="{{route('clean', ['id' => $current_order_id])}}" class="btn btn-primary btn-lg">Svuota il carrello</a>
-					<a href="#" class="btn btn-primary btn-lg">Conferma carrello</a>
+					<a href="{{route('confirm', ['id' => $current_order_id])}}" class="btn btn-primary btn-lg">Conferma carrello</a>
 				</div>
 	@endif
 </main>

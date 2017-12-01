@@ -32,13 +32,13 @@ class Order extends Model
 
     public static function extractOrder(){
 
-       $order = Order::where([['id_buyer','=', Auth::user()->id],
+       $order = Order::where([['id_customer','=', Auth::user()->id],
         ['order_state','=','pendant']])->get();
        return $order;
    }
    public static function extractPendantOrder(){
 
-     return Order::where([['order_state','pendant'],['id_buyer',Auth::user()->id]])->get();
+     return Order::where([['order_state','pendant'],['id_customer',Auth::user()->id]])->get();
       
    }
 
@@ -63,6 +63,10 @@ class Order extends Model
 
     public static function clean($id_ord){
          Order::where('id',$id_ord)->delete();
+   }
+
+     public static function confirm($id_ord){
+         Order::where('id',$id_ord)->update(['order_state'=>'requested']);
    }
 
 }

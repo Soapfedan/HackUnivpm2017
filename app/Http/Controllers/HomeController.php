@@ -49,7 +49,7 @@ class HomeController extends Controller
         $status = 'empty';
         $pendantOrder =  Order::extractPendantOrder();
         if($pendantOrder->isEmpty()){
-            return view('shop',['status'=>$status,'products'=>$products]);
+            return view('shop',['status'=>$status,'products'=>$products,'get_status'=>false,'current_order_id'=>0]);
         }else{
             $status = 'ok';
             $prods = explode(';', $pendantOrder[0]->products_list); 
@@ -125,7 +125,7 @@ class HomeController extends Controller
             Order::updatePendantOrder($pendantOrder,$prod_id,$product->price);
         }else{
             //INSERT
-            Order::create(['products_list'=>$prod_id,'order_state'=>'pendant','id_buyer'=>Auth::user()->id,'grand_total'=>$product->price]);
+            Order::create(['products_list'=>$prod_id,'order_state'=>'pendant','id_customer'=>Auth::user()->id,'grand_total'=>$product->price]);
         }
 
         
@@ -210,6 +210,12 @@ class HomeController extends Controller
         $id=request()->id;
         Order::clean($id);
         return redirect()->route('shoppingcart');
+    }
+
+    public function confirm(){
+        $id=request()->id;
+        Order::confirm($id);
+        return redirect()->route('request');
     }
 
 
