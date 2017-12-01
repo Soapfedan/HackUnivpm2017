@@ -25,7 +25,7 @@
 				      	@endforeach
 				      	<li>...</li>
 				      </ul>
-				      <footer class="text-left"><h4><span class="badge badge-success">{{$to[2]}}€</span></h4></footer>
+				      <footer class="text-left"><h4><span class="badge badge-success">{{ number_format($to[2],2,'.','') + 3.99}}€</span></h4></footer>
 				      <footer class="text-right"><a href="{{route('getRequest', ['id' => $to[0]])}}" class="btn btn-primary btn-sm">Vedi tutto</a></footer>
 				    </blockquote>
 				  </div>
@@ -52,7 +52,7 @@
 				      	@endforeach
 				      	<li>...</li>
 				      </ul>
-				      <footer class="text-left"><h4><span class="badge badge-success">{{$torec[2]}}€</span></h4></footer>
+				      <footer class="text-left"><h4><span class="badge badge-success">{{ number_format($torec[2],2,'.','') + 3.99}}€</span></h4></footer>
 				      <footer class="text-right"><a href="{{route('getRequest', ['id' => $torec[0]])}}" class="btn btn-primary btn-sm">Vedi tutto</a></footer>
 				    </blockquote>
 				  </div>
@@ -79,7 +79,7 @@
 				      	@endforeach
 				      	<li>...</li>
 				      </ul>
-				      <footer class="text-left"><h4><span class="badge badge-success">{{$alls[2]}}€</span></h4></footer>
+				      <footer class="text-left"><h4><span class="badge badge-success">{{ number_format($alls[2],2,'.','') + 3.99}}€</span></h4></footer>
 				      <footer class="text-right"><a href="{{route('getRequest', ['id' => $alls[0]])}}" class="btn btn-primary btn-sm">Vedi tutto</a></footer>
 				    </blockquote>
 				  </div>

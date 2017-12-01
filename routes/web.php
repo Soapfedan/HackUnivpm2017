@@ -36,3 +36,4 @@ Route::post('/valuta/{id_ord}','HomeController@valuta')->name('valuta');
 Route::post('/acceptorder','HomeController@acceptOrder')->name('acceptorder');
 Route::post('/search','HomeController@search')->name('search');
 Route::get('/clean/{id}','HomeController@clean')->name('clean');
+Route::get('/confirm/{id}','HomeController@confirm')->name('confirm');
