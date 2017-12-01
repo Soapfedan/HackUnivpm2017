@@ -35,7 +35,7 @@
 			@if($auth_id==$buyer->id)
 				<div class="text-center">
 					Consegnato a: 
-					<a href="{{route('bioRequest', ['id' => $customer->id])}}" class="btn btn-primary btn-lg"><?= $buyer->name.' '.$buyer->surname?></a>
+					<a href="{{route('bioRequest', ['id' => $buyer->id])}}" class="btn btn-primary btn-lg"><?= $buyer->name.' '.$buyer->surname?></a>
 				</div>
 			@else
 				<div class="text-center">

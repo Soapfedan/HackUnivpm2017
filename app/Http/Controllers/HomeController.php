@@ -89,7 +89,10 @@ class HomeController extends Controller
                     //numero ordine, stato ordine (che non sia pendant), il totale dell'ordine e il nome di tutti i prodotti
                     $all[] = [$order->id,$order->order_state,$order->grand_total,$prods_name];
                     $customer = User::find($order->id_customer);
-                   //$adresses[] = [$customer->address.', '.$customer->civic_number.' - '.$customer->country];
+                    //Nome e Cognome
+
+                    //indirizzo
+                    //$adresses[] = [$customer->address.', '.$customer->civic_number.' - '.$customer->country];
                 }
             }
         }
