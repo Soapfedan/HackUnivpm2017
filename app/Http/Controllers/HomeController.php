@@ -83,7 +83,7 @@ class HomeController extends Controller
                     //numero ordine, stato ordine (che non sia pendant), il totale dell'ordine e il nome di tutti i prodotti
                     $toreceive[] = [$order->id,$order->order_state,$order->grand_total,$prods_name];
                 }
-                 if($order->id_buyer!=$id_user && $order->id_customer!=$id_user){
+                 if($order->id_buyer!=$id_user && $order->id_customer!=$id_user && $order->order_state=='requested'){
                     //numero ordine, stato ordine (che non sia pendant), il totale dell'ordine e il nome di tutti i prodotti
                     $all[] = [$order->id,$order->order_state,$order->grand_total,$prods_name];
                 }
@@ -121,8 +121,14 @@ class HomeController extends Controller
         return view('bio',['user'=>$user]);
     }
 
+    public function bioRequest(){
+        $user = User::find(request()->id);
+        return view('bio',['user'=>$user]);
+    }
+
     public function getRequest(){
         $products = [];
+        $auth_id = Auth::user()->id;
         $currentOrder = Order::find(request()->id);
         $status = 'ok';
             $prods = explode(';', $currentOrder->products_list); 
@@ -131,9 +137,9 @@ class HomeController extends Controller
                $elem = Product::find($key);
                $products[] = [$elem->product,$elem->price,$value];
             }
-            
-
-            return view('shop',['status'=>$status,'products'=>$products,'date'=>$currentOrder->updated_at,'grand_total'=>$currentOrder->grand_total]);
+            $buyer = User::find($currentOrder->id_buyer);
+            $customer = User::find($currentOrder->id_customer);
+            return view('shop',['status'=>$status,'products'=>$products,'apt_date'=>$currentOrder->updated_at,'grand_total'=>$currentOrder->grand_total,'order_state'=>$currentOrder->order_state,'auth_id'=>$auth_id,'buyer'=>$buyer,'customer'=>$customer]);
         
     }
 

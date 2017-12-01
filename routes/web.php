@@ -29,4 +29,5 @@ Route::get('/shoppingcart', 'HomeController@shop')->name('shoppingcart');
 
 Route::get('/bio', 'HomeController@bio')->name('bio');
 Route::get('/shoppingcart/{id}', 'HomeController@getRequest')->name('getRequest');
+Route::get('/bio/{id}', 'HomeController@bioRequest')->name('bioRequest');
 

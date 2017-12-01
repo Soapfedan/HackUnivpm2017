@@ -8,7 +8,8 @@
 
 		<div class="receipts">
 			@if($status=='ok')
-			<small>{{ Carbon\Carbon::parse($date)->format('d-m-Y | G:i:s') }}</small>
+			<?php print_r($apt_date)?>
+			<small>{{ Carbon\Carbon::parse($apt_date)->format('d-m-Y | G:i:s') }}</small>
 			<hr>
 			<table>
 				@foreach($products as $product)
@@ -31,13 +32,40 @@
 		</div>
 	</div>
 
+	@if($order_state=='completed')
+		@if($auth_id==$buyer->id)
+			<div class="text-center">
+				Consegnato a: 
+				<a href="{{route('bioRequest', ['id' => $customer->id])}}" class="btn btn-primary btn-lg"><?= $buyer->name.' '.$buyer->surname?></a>
+			</div>
+		@else
+			<div class="text-center">
+				Preso in carico e consegnato da: 
+				<a href="{{route('bioRequest', ['id' => $buyer->id])}}" class="btn btn-primary btn-lg"><?= $buyer->name.' '.$buyer->surname?></a>
+			</div>
+		@endif
+	@elseif($order_state=='accepted')
+		@if($auth_id==$buyer->id)
+			<div class="text-center">
+				Da consegnare entro le {{Carbon\Carbon::parse($apt_date)->format('d-m-Y | G:i:s')}} a : 
+				<a href="{{route('bioRequest', ['id' => $customer->id])}}" class="btn btn-primary btn-lg"><?= $buyer->name.' '.$buyer->surname?></a>
+			</div>
+		@else
+			<div class="text-center">
+				Preso in carico e in consegna da: 
+				<a href="{{route('bioRequest', ['id' => $buyer->id])}}" class="btn btn-primary btn-lg"><?= $buyer->name.' '.$buyer->surname?></a>
+			</div>
+			<div class="text-center">
+				<div class="text-center">
+				Dai una valutazione
+				<a href="#" class="btn btn-primary btn-lg">Valuta</a>
+			</div>
+			
+			</div>
+		@endif
+	@else
 
-	<div class="text-center">
-		<a href="#" class="btn btn-primary btn-lg">Invia richiesta</a>
-	</div>
-	<div class="text-center">
-		<a href="#" class="btn btn-primary btn-lg">Prenditi carico di questa spesa</a>
-	</div>
+	@endif
 
 </main>
 @endsection
