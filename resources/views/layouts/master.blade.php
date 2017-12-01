@@ -7,11 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/slideshow.css">
-  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="{{asset(css/bootstrap.css)}}">
+  <link rel="stylesheet" href="{{asset(css/slideshow.css)}}">
+  <link rel="stylesheet" href="{{asset(css/custom.css)}}">
 
-  <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{{asset(css/font-awesome/css/font-awesome.min.css">
 
 </head>
 <body>
@@ -26,9 +26,9 @@
 @include('layouts.footer')
 
   <!-- Optional JavaScript -->
-  <script src="js/jquery-3.2.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
+  <script src="{{asset(js/jquery-3.2.1.min.js)}}"></script>
+  <script src="{{asset(js/popper.min.js)}}"></script>
+  <script src="{{asset(js/bootstrap.min.js)}}"></script>
  
 </body>
 </html>

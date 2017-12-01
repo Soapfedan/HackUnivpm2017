@@ -1,18 +1,22 @@
-@extends('layouts.app')
+@extends('layouts.master')
 
 @section('content')
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <?php
-            echo $user->name;
-            echo $user->email;
-            echo $user->surname;
-            echo $user->address;
-            echo $user->civic_number;
-            echo $user->zip_code;
-            echo $user->country;
-            echo $user->telephone;
+            echo $user->name.' '.
+            $user->email.' '.
+            $user->surname.' '.
+            $user->address.' '.
+            $user->civic_number.' '.
+            $user->zip_code.' '.
+            $user->country.' '.
+            $user->telephone;
             ?>
         </div>
     </div>

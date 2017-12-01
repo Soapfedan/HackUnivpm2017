@@ -26,6 +26,11 @@ class GuestController extends Controller
         return view('index');
     }
 
+    public function usage(){
+
+        return view('usage');
+    }
+
     /**
      * Show the form for creating a new resource.
      *

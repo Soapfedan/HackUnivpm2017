@@ -10,13 +10,15 @@
         <!--<li class="navbar-item">
           <a class="nav-link" href="#">Dashboard</a>
         </li>-->
+         <li class="navbar-item">
+          <a class="nav-link" href="{{ route('bio') }}">Bio</a></li>
         <li class="navbar-item">&nbsp;&nbsp;&nbsp;</li>
         <li class="nav-item dropdown">
     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dashboard</a>
     <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; transform: translate3d(0px, 37px, 0px); top: 0px; left: 0px; will-change: transform;">
       <a class="dropdown-item" href="{{route('dashboard')}}">Catalogo</a>
       <a class="dropdown-item" href="{{route('request')}}">Richieste</a>
-      <a class="dropdown-item" href="{{route('shoppingcart')}}">Carrello</a>
+      <a class="dropdown-item" href="{{route('shoppingcart')}}">La tua Spesa</a>
 
     </div>
   </li>
